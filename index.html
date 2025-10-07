@@ -45,6 +45,37 @@
         button:hover {
             background-color: #e8b4b8;
         }
+
+        #hero .hero-video img { /* Targets the fallback img in video tag */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hero {
+        height: 400px; /* Shorter on mobile */
+    }
+    
+    #hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero-video {
+        object-fit: cover; /* Ensures mobile scaling */
+    }
+}
+/* Pause video on mobile if needed (optional, for data saving) */
+@media (max-width: 768px) {
+    .hero-video {
+        /* Uncomment to pause: */
+        /* autoplay: none; */
+    }
+}
+
         /* Header */
         header {
             background-color: #fdf8f0;
@@ -400,7 +431,7 @@
         <section class="hero">
             <div class="hero-content container">
                 <h1>Gifts that touch hearts, not just hands.</h1>
-                <img src="image/header.png" class="img-fluid" alt="logo" >
+                <img src="" class="img-fluid" alt="logo" >
                 <button>Shop Now</button>
             </div>
         </section>

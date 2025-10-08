@@ -46,35 +46,9 @@
             background-color: #e8b4b8;
         }
 
-        #hero .hero-video img { /* Targets the fallback img in video tag */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    #hero {
-        height: 400px; /* Shorter on mobile */
-    }
-    
-    #hero h1 {
-        font-size: 2em;
-    }
-    
-    .hero-video {
-        object-fit: cover; /* Ensures mobile scaling */
-    }
-}
-/* Pause video on mobile if needed (optional, for data saving) */
-@media (max-width: 768px) {
-    .hero-video {
-        /* Uncomment to pause: */
-        /* autoplay: none; */
-    }
-}
+        
+
+
 
         /* Header */
         header {
@@ -109,7 +83,7 @@
         }
         /* Hero Banner */
         .hero {
-            background-image: url('https://via.placeholder.com/1200x600?text=Beautiful+Gift+Hampe'); /* Replace with actual image */
+            background-image: url('image/header.png');
             background-size: cover;
             background-position: center;
             height: 600px;
@@ -428,11 +402,10 @@
     <!-- Homepage -->
     <main id="home">
         <!-- Hero Banner -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-content container">
                 <h1>Gifts that touch hearts, not just hands.</h1>
-                <img src="image/header.png/" class="img-fluid"  >
-                <button>Shop Now</button>
+        <button>Shop Now</button>
             </div>
         </section>
 
